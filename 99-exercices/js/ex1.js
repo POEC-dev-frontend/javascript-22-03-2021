@@ -26,10 +26,10 @@
 
 /*
 * Réaliser un switch qui prend nb2 et qui affiche: 
-*        - "a" si nombre2 est égal à 3 
-*        - "b" si nombre2 est égal à 5 
-*        - "c" si nombre2 est égal à 7 
-*        - "d" si nombre2 est égal à autre chose.
+*        - "a" si nb2 est égal à 3 
+*        - "b" si nb2 est égal à 5 
+*        - "c" si nb2 est égal à 7 
+*        - "d" si nb2 est égal à autre chose.
 */
 
 
