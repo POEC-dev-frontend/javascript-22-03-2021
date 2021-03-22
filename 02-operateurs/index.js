@@ -232,7 +232,8 @@ if (age <= 18) {
 // Les deux if sont indépendants, on peut entrer dans les deux, un seul ou aucun
 if (age <= 18) {
     console.log("if-if: Reduction moins de 18ans");
-} 
+}
+
 if (age <= 25) {
     console.log("if-if: Reductionn Jeune");
 }
@@ -243,3 +244,107 @@ console.log("La suite.");
 // else et elseif ne peuvent pas existé tout seul
 if(age < 18) { } else { }
 // else if (age < 18) {}
+
+
+console.log("____ Operateur Logique _____");
+
+// if (age >= 18) {
+//     if (age <= 25) {
+//     } else {
+//     }
+// }
+
+age = 22;
+// && (ET): Il faut que les 2 tests soient vrais
+if (age >= 18 && age <= 25) {
+    console.log("Vous avez entre 18 et 25 ans");
+}
+
+
+// ALTGR+6
+// || (OU): Il faut qu'au moins un des deux test soit vrai
+age = 17;
+let derogation = true;
+
+if (age >= 18 || derogation == true) {
+    console.log("Vous avez au moins 18 ans ou une derogation");
+}
+
+// ! (NON): Inverse la valeur d'un booléen
+
+erreur = false;
+console.log("Erreur: " + erreur);
+console.log("Erreur: " + !erreur);
+
+// if (erreur == true) {
+if (erreur) {
+    console.log("Il y a une erreur, on stop tout !");
+}
+
+// if (erreur == false) {
+if (!erreur) {
+    console.log("Il n'y a pas d'erreur, on continue");
+}
+
+let bouton = false; // off 
+
+bouton = !bouton; // toggle
+
+// if (bouton == false) {
+//     bouton = true; // on
+// } else {
+//     bouton = false;
+// }
+
+
+// Automatic Semicolon Insertion (ASI)
+
+age = 55;
+
+// switch(variableATester)
+switch(age) {
+    // if (age === 5) { } <- egalité stricte
+    case 5:
+        console.log("5 ans");
+        break;
+    case 6:
+    case 7:
+        console.log("7 ans");
+        break;
+    default:
+        console.log("Je ne sais pas.");
+        break;
+}
+
+console.log("____ Condition ou affectation ternaire ____");
+
+age = 55;
+
+// Est-ce que age est superieur a 45 ? si oui : si non 
+(age > 45) ? console.log("C'est oui") : console.log("c'est non");
+
+resultat3 = (age > 45) ? 42 : 79;
+console.log("Résultat: " + resultat);
+
+// if (age > 45) {
+//     resultat = 42;
+// } else {
+//     resultat = 79;
+// }
+
+// resultat3 = (age > 45) ? 42 : ((age > 35) ? 21 : 32);
+
+
+/**
+ * Ce que l'utilisateur saisit, est toujours une chaine de caractères.
+ */
+nombre = prompt('Saisir un nombre: ');
+console.log("Vous avez le nombre: " + nombre + " Typeof: " + typeof(nombre));
+nombre = Number(nombre);
+resultat = nombre % 2;
+
+if (resultat == 0) {
+    console.log(nombre + " est pair");
+} else {
+    console.log(nombre + " est impair");
+}
