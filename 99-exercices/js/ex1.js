@@ -144,3 +144,4 @@ let new_heures = heures + Math.floor(resultat / 60) // 2 + 1 = 3
 let new_minutes = (resultat % 60) // 120 % 60 = 15
 
 console.log(heures + "h" + minutes + " + " + nombre + " minutes = " + new_heures + "h" + new_minutes + "minutes");
+console.log(`${heures}h${minutes} + ${nombre}minutes = =${new_heures}h${new_minutes}minutes`);

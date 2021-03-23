@@ -57,7 +57,8 @@ fairePunition(25);
 // fairePunition(let combienDeFois = 100);
 fairePunition(100);
 
-let nombre = +prompt('Combien de fois je dois recopier ? ');
+// let nombre = +prompt('Combien de fois je dois recopier ? ');
+let nombre = 25;
 // fairePunition(let combienDeFois = nombre);
 // fairePunition(let combienDeFois = 3);
 fairePunition(nombre);
@@ -89,4 +90,28 @@ function fairePunitionV3(message, combienDeFois=10) {
 fairePunitionV3('Je ne dois pas faire ça', 5);
 fairePunitionV3('Je ne dois pas faire ci');
 
-console.log("Des fonctions qui renvoient une valeur");
+console.log("=> Des fonctions qui renvoient une valeur");
+
+function carre(nombre) { // 5
+    // let : portée bloc
+    // var: portée fonction
+    var resultat = nombre * nombre; // 5x5
+    return resultat //renvoie une valeur (25)
+    // console.log("return quitte la fonction donc cette ligne ne sera jamais excutée");
+}
+
+/**
+ * Si une fonction renvoie une valeur, on peut stocker cette valeur dans une variable:
+ */
+carre(5);
+// console.log(resultat); <- la variable resultat n'existe pas en dehors de la fonction
+
+
+// let res = 25;
+let res = carre(5);
+console.log("Res: " + res);
+
+console.log( carre(7) );
+
+// alert('')
+// let nombre = prompt('')

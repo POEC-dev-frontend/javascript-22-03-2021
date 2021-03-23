@@ -55,3 +55,28 @@ v1 = "Salut";
 v2 = v1;
 
 console.log( typeof(v2) );
+
+
+var x = 5;
+let y = 5;
+
+console.log("x: " + x);
+console.log("y: " + y);
+
+if (true) {
+    let variable3 = "Bonjour !";
+    const variable5 = "Ciao !";
+    var variable4 = "Hello !";
+    console.log("Variable 4: " + variable4); 
+    console.log("Constante 5: " + variable5); 
+    console.log("y dans le if: " + y);
+    if (true) {
+        console.log("Variable 3: " + variable3); 
+        console.log("y: " + y); 
+    }
+}
+
+// console.log(variable3); < - erreur la variable n'existe plus
+// console.log(variable5); < - erreur la variable n'existe plus
+console.log(variable4);
+let variable3 = "Salut";
